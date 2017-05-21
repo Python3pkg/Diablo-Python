@@ -248,7 +248,7 @@ class ConvertPHP():
                     else:
                         # Convert values to their properly formatted strings
                         # Integers and booleans are not quoted as array values
-                        val = str(val) if val.isdigit() or val in self.lang_specific_values[language].values() else '\'' + str(val) + '\''
+                        val = str(val) if val.isdigit() or val in list(self.lang_specific_values[language].values()) else '\'' + str(val) + '\''
 
                         retval += self.get_inner_template(language, 'singular', indentation, key, val) 
 

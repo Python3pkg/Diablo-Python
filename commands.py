@@ -17,7 +17,7 @@
 # <https://www.gnu.org/licenses/gpl-3.0.html/>.
 
 import argparse
-import file_parsing as fp
+from . import file_parsing as fp
 
 def run_excel_to_html():
     """
